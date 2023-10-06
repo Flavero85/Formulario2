@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+</head>
+<body>
+    <form action="/pagina2" method="post">
+        <div class="nome">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="fone">Celular com DDD</label>
+            <input type="tel" id="fone" required pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="11 99999-9999">
+        </div>
+        <br>
+        <div>
+        <label for="hora-desejada">Hora desejada</label>
+        <input type="time" name="hora-desejada" id="hora-desejada" required>
+        </div>
+        <br>
+        <div>
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" id="nascimento" name="nascimento">
+        </div>
+        <br>
+        <div>
+            <label for="site">Seu site</label>
+            <input type="url" id="site" name="site" required>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+        <br>
+        <div>
+            <label for="cor">Cor favorita</label>
+            <input type="color" id="cor" name="cor">
+        </div>
+        <br>
+        <div>
+            <label for="filhos">Quantidade de filhos</label>
+            <input type="number" id="filhos" name="filhos">
+        </div>
+        <br>
+        <div>
+            <label for="peso">Peso</label>
+            0 <input type="range" id="peso" name="peso" min="0" max="200"> 200
+        </div>
+        <br>
+        <div>
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="PB">PB</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <p>Grau de Estudo</p>
+            <input type="radio" id="medio" name="ensino" value="Ensino Médio">
+            <label for="medio">Ensino Médio</label>
+            <input type="radio" name="ensino" id="faculdade" value="Ensino Superior">
+            <label for="faculdade">Ensino Superior</label>
+            <input type="radio" name="ensino" id="mestrado" value="Mestrado">
+            <label for="mestrado">Mestrado</label>
+        </div>
+        <br>
+        <div>
+            <label for="msg">Mensagem:</label>
+            <textarea id="msg" cols="30" rows="5"></textarea>
+        </div>
+        <br>
+        <div class="button">
+            <button type="submit">Enviar sua mensagem</button>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
