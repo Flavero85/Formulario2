@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="/pagina2" method="post">
@@ -34,7 +35,7 @@
         <br>
         <div>
             <label for="site">Seu site</label>
-            <input type="url" id="site" name="site" required>
+            <input type="url" id="site" name="site" required><br><br>
             <label for="senha">Senha</label>
             <input type="password" id="senha" name="senha" required>
         </div>
@@ -51,7 +52,9 @@
         <br>
         <div>
             <label for="peso">Peso</label>
-            0 <input type="range" id="peso" name="peso" min="0" max="200"> 200
+            <div class="peso">
+            30 <input type="range" id="peso" name="peso" min="30" max="150"> 150
+            </div>
         </div>
         <br>
         <div>
@@ -63,14 +66,15 @@
             </select>
         </div>
         <br>
-        <div>
-            <p>Grau de Estudo</p>
+        <div class="radio">
+            <p><strong>Grau de Estudo</p></strong>
             <input type="radio" id="medio" name="ensino" value="Ensino Médio">
-            <label for="medio">Ensino Médio</label>
+            <label for="medio">Ensino Médio</label><br><br>
             <input type="radio" name="ensino" id="faculdade" value="Ensino Superior">
-            <label for="faculdade">Ensino Superior</label>
+            <label for="faculdade">Ensino Superior</label><br><br>
             <input type="radio" name="ensino" id="mestrado" value="Mestrado">
             <label for="mestrado">Mestrado</label>
+            
         </div>
         <br>
         <div>
